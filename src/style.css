@@ -1,0 +1,169 @@
+body {
+  background: lightblue;
+}
+/* Layers */
+.road-window {
+  position: relative;
+  width: 100%; 
+  height: 100%; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: visible;
+}
+
+/* Multiple uses styles */
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Road */
+.road {
+  width: 20px;
+  height: 0;
+  border-left: 40vw solid transparent;
+  border-right: 40vw solid transparent;
+  border-bottom: 50vh solid #565B5Fed;
+}
+.road-centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, 0%);
+}
+
+/* Road Border */
+.road-border{
+  width: 210px;
+  height: 0px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.road-former{
+  width: 5px;
+  height: 10px;
+}
+
+.road-former-luminosity {
+  position: absolute;
+  top: -38.4vh;
+  left: -33vw;
+  height: 0vw;
+  width: 0px;
+  border-right: 13vw solid #F1F1F1;
+  border-top: 52.8vw solid transparent;
+  border-bottom: 4vw solid #F1F1F1;
+  border-left: 0vw solid black;
+  border-top-left-radius: 75%;
+  border-top-right-radius: 2.7%;
+  transform: rotate(47deg);
+  -webkit-transform: rotate(54.2deg);
+  background: transparent;
+}
+
+.road-right-luminosity {
+  top: 21.2vh;
+  left: 25.4vw;
+  transform: rotate(47deg);
+  -webkit-transform: rotate(-68.2deg);
+}
+
+.road-former-shadow {
+  position: absolute;
+  top: -45.75vh;
+  left: -38.7vw;
+  -webkit-transform: rotate(49deg);
+  transform: rotate(55.5deg);
+  height: 0vw;
+  width: 0px;
+  border-right: 13vw solid #AFAFAF;
+  border-top: 66.5vw solid transparent;
+  border-bottom: 4vw solid #AFAFAF;
+  border-left: 0vw solid black;
+  border-top-left-radius: 70%;
+  border-top-right-radius: 2.7%;
+  background: transparent;
+}
+.road-right-shadow {
+  top: 15.2vh;
+  left: 30.6vw;
+  transform: rotate(47deg);
+  -webkit-transform: rotate(-65.4deg);
+}
+
+
+/* Road Strip */
+.road-strip{
+  width: 1px;
+  height: 1px;
+  border-left: .18vw solid transparent;
+  border-right: .18vw solid transparent;
+  border-bottom: .4vh solid #ffffff;
+  margin-top: 0vh;
+}
+
+.road-strip-animation {
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1.5s;
+  transition: 1.45s;
+  transform: scale(50, 200);
+  margin-top: 100vh;
+}
+
+/* Isles */
+.isle-animation {
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  transform: scale(30, 150);
+}
+.isle {
+  object-position: -60% 0%;
+  left: 50%;
+  right: 50%;
+  width: 1px;
+  height: 1px;
+  border-top: 0 solid transparent;
+  border-left: 0 solid transparent;
+  border-bottom: 0 solid transparent;
+  /* bring your own prefixes */
+  transform: translate(-50%, 0%);
+}
+
+.isle-left {
+  border-top: .2vw solid transparent;
+  border-left: 4vh solid brown;
+  border-bottom: 1vh solid transparent;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -ms-transition: 4s;
+  -o-transition: 4s;
+  transition: 4s;
+  transform: scale(20, 60);
+}  
+
+.isle-right {
+  border-top: .2vw solid transparent;
+  border-right: 4vh solid brown;
+  border-bottom: 1vh solid transparent;
+  -webkit-transition: 4s;
+  -moz-transition: 4s;
+  -ms-transition: 4s;
+  -o-transition: 4s;
+  transition: 4s;
+  transform: scale(20, 60);
+}
+

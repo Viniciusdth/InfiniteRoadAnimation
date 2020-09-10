@@ -23,7 +23,7 @@ body {
   right: 0;
   bottom: 0;
   background: #585978;
-  box-shadow: 0px 0px 55vh #fda14c;
+  box-shadow: 0px 1vw 100vw 5vw #fda14c;
 }
 
 /* Multiple uses styles */
@@ -182,7 +182,7 @@ body {
 
 /* sunset */
 
-.sunset {
+.sunset, .sun {
   position: absolute; 
   object-position: -60% 0%;
   top: 89.7%;
@@ -190,10 +190,16 @@ body {
   right: 50%;
   width: 150px;
   height: 70px;
-  border-radius: 50%;
-  background: #fefef2;
+  background: #F1F1F1;
   transform: translate(-50%, -50%); 
   border-radius: 150px 150px 0 0; 
-  box-shadow: 0px 0px 200px #fda14c;
+  box-shadow: 0px 10px 100vw 10vw #fda14c90;
+  border: solid 10rem rgba(#F1F1F1, .1);
   z-index: -1;
+}
+.sun {
+  top: 50%;
+  background-color: transparent;
+  box-shadow: inset 0px 35px 20px 5px #fda14c90;
+
 }
